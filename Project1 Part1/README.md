@@ -1,1 +1,0 @@
-# jaspernakamura.github.io
