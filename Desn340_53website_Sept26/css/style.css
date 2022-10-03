@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+section.myclass a {
+    color:blue;
+}
+/*
+section h1 ~ a {
+    color: pink;
+}*/
+
+
+a.Pencil {
+    color: red;
+}
+
+#shopname {
+    color:aqua;
+}
