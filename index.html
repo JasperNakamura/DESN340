@@ -3,19 +3,17 @@
         <title>Cyberpunk History</title>
         <link rel="icon" href="img/logo.png" type = "image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/global.css"> 
-		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
     <body>
         <header>
             <div>
-                
-            </div>
-            <div>
                 <nav>
-                    <ul>
-                        <li id="headerlogo"><a href="index.html"><img src="img/banner.png" id="headerimage"></a></li>
+                    <ul class="header-nav">
+                        <li style="float: left;"><a href="index.html" id="headerlogo">
+                            <img src="img/banner.png" style="height: 18px;"/>
+                        </a></li>
                         <li><a href="#">Games</a></li>
                         <li><a href="#">Comics</a></li>
                         <li><a href="#">Music</a></li>
@@ -26,62 +24,64 @@
             </div> 
         </header>
         
-        <div class="jumbotron">
-            <div class="jumbotext">
-                <h1>
-                    <span>Cyberpunk</span><br>
-                    The rise of an old subculture
-                </h1>
-                <a href="#learnjump">
-                    <button id="LearnButton">
-                        Learn More
-                    </button>
-                </a>
+        <div class="main-content">
+            <div class="jumbotron">
+                <div class="jumbotext">
+                    <h1>
+                        <span>Cyberpunk</span><br>
+                        The rise of an old subculture
+                    </h1>
+                    <a href="#learnjump">
+                        <button id="LearnButton">
+                            Learn More
+                        </button>
+                    </a>
+                </div>
+                
             </div>
-            
+    
+            <section class="image-highlight">
+                <div class="wrapper">
+                    <h1>Style and ethos</h1>
+                    <h2>Artificial landscapes and “city lights at night” were some of the first metaphors used by the genre for cyberspace</h2>
+                    <div class="image-list">
+                        <div class="imagebox">
+                            <img class="boxed-image" src="img/gallery1.jpg">
+                        </div>
+    
+                        <div class="imagebox">
+                            <img class="boxed-image" src="img/gallery4.jpg">
+                        </div>
+    
+                        <div class="imagebox">
+                            <img class="boxed-image" src="img/gallery2.jpg">
+                        </div>
+                
+                        <div class="imagebox">
+                            <img class="boxed-image" src="img/gallery3.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="learn" id="learnjump">
+                <div>
+                    <div class="info-l-blurb">
+                        <h2>Cyberpunk was made first back in the New Wave science fiction movement of the 1960s and 1970s where authors examined the impact of drug culture, technology, and the sexual revolution while avoiding the utopian tendencies of earlier science fiction.</h2>
+                    </div>
+                    <img src="img/learn1.jpg">
+                </div>
+            </section>
+    
+            <section class="learn">
+                <div>
+                    <div class="info-r-blurb">
+                        <h2>Through recent years especially with the modern take of the cyberpunk subgenre the release of the video game Cyberpunk 2077 has brought the genre to new found popularity and even more with the release of the anime Cyberpunk Edgerunners.</h2>
+                    </div>
+                    <img src="img/learn2.jpg">
+                </div>
+            </section>
         </div>
-
-        <section class="image-highlight">
-            <div class="wrapper">
-                <h1>Style and ethos</h1>
-                <h2>Artificial landscapes and “city lights at night” were some of the first metaphors used by the genre for cyberspace</h2>
-                <div class="image-list">
-                    <div class="imagebox">
-                        <img class="boxed-image" src="img/gallery1.jpg">
-                    </div>
-
-                    <div class="imagebox">
-                        <img class="boxed-image" src="img/gallery4.jpg">
-                    </div>
-
-                    <div class="imagebox">
-                        <img class="boxed-image" src="img/gallery2.jpg">
-                    </div>
-            
-                    <div class="imagebox">
-                        <img class="boxed-image" src="img/gallery3.jpg">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="learn" id="learnjump">
-            <div>
-                <div class="info-l-blurb">
-                    <h2>Cyberpunk was made first back in the New Wave science fiction movement of the 1960s and 1970s where authors examined the impact of drug culture, technology, and the sexual revolution while avoiding the utopian tendencies of earlier science fiction.</h2>
-                </div>
-                <img src="img/learn1.jpg">
-            </div>
-        </section>
-
-        <section class="learn">
-            <div>
-                <div class="info-r-blurb">
-                    <h2>Through recent years especially with the modern take of the cyberpunk subgenre the release of the video game Cyberpunk 2077 has brought the genre to new found popularity and even more with the release of the anime Cyberpunk Edgerunners.</h2>
-                </div>
-                <img src="img/learn2.jpg">
-            </div>
-        </section>
 
         <footer>
             <div>
@@ -106,6 +106,5 @@
                 </p>
             </div>
         </footer>
-
     </body>
 </html>
