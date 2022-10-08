@@ -195,53 +195,57 @@ div.image-list {
 .boxed-image {
     max-width: calc(100%);
 }
+
 /*Learn More section*/
-.learn {
-    padding-bottom: 110px;
-    padding-bottom: 5px;
-    position: relative;
-    background-color: #fef802;   
-}
-
-.learn div img {
-    max-width: 100vw;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-bottom: 45px;
+#parallax-1 {
+    /* The image used */
+    background-image: url("../img/learn1.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    z-index: 0;
+  }
+
+#parallax-2 {
+/* The image used */
+background-image: url("../img/learn2.jpg");
+
+/* Set a specific height */
+min-height: 500px; 
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
-div.info-l-blurb {
-    background-color: #fef802;
-    color: black;
-    padding: 24px;
+#parallax-text-1 {
+    padding: 40px;
+    max-width: 35%;
+    text-align: left;
     position: absolute;
-    max-width: 50%;
-    max-height: 50%;
-    top: 15%;
-    left: 0;
-    z-index: 1;
-    overflow: hidden;
-}
-
-div.info-r-blurb {
     background-color: #fef802;
-    color: black;
-    padding: 24px;
-    position: absolute;
-    max-width: 50%;
-    max-height: 50%;
-    top: 15%;
-    right: 0;
-    z-index: 1;
-    overflow: hidden;
 }
 
+#parallax-text-2 {
+    padding: 80px;
+    text-align: center;
+}
+
+#parallax-text-3 {
+    padding: 40px;
+    max-width: 35%;
+    text-align: right;
+    position: absolute;
+    margin-left: 65%;
+    background-color: #fef802;
+}
 
 /*Footer Styling*/
 footer {
