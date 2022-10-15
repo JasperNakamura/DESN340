@@ -1,0 +1,131 @@
+/* STYLE SHEET */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* CSS HEX */
+:root {
+    --dark-jungle-green: #002029ff;
+    --gunmetal: #00303dff;
+    --midnight-green-eagle-green: #004052ff;
+    --midnight-green-eagle-green-2: #005066ff;
+    --blue-sapphire: #00607aff;
+}
+
+/* universal styling first */
+
+html {
+	box-sizing: border-box;
+    
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 400;
+    background-color: var(--dark-jungle-green);
+    color: white;
+    animation-name: bgchange;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgchange {
+    0% {background-color: var(--dark-jungle-green);}
+    25% {background-color: var(--gunmetal);}
+    50% {background-color: var(--midnight-green-eagle-green);}
+    75% {background-color: var(--gunmetal);}
+    100% {background-color: var(--dark-jungle-green);}
+}
+
+/* Navigation Styling */
+ul {
+ 	list-style-type: none;
+ }
+
+li {
+     display: inline;
+}
+
+.container-fluid {
+	width: 100%;
+	height: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: var(--blue-sapphire);
+}
+
+.nav-link a  {
+	margin-right: 0;
+	margin-left: 40px;
+	padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+	margin: 0 50px;
+}
+
+.right-align {
+	float: right;
+}
+
+/* Hero section Styling */
+.hero { 
+	display: grid;
+    padding-top: 100px;
+	grid-gap: 60px;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: auto auto;
+
+}
+  
+.hero-title > h1 {
+	font-size: 6em;
+	z-index: 1;
+    margin: 0;
+}
+
+.hero-title > h2 {
+    font-size: 48px;
+}
+
+.hero-img { 
+    grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.hero-img img {
+    height: 700px;
+    max-width: auto;
+    max-height: 100%;
+}
+  
+.hero-title { 
+    grid-column-start: 4;
+	grid-column-end: 7;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+  
+.hero-blurb { 
+    font-size: 1.2em;
+    grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 5;
+}
+  
+footer {
+    position: absolute;
+    padding-bottom: 1.5em;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
