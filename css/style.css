@@ -15,6 +15,7 @@ body {
     color: white;
 }
 
+/*Css Grid to format landing page*/
 body {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 2.6fr 0.2fr;
@@ -60,6 +61,7 @@ footer {
     margin-top: 80px;
 }
 
+/*Banner area*/
 .banner {
     height: 250px;
     width: 100%;
