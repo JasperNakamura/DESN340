@@ -109,7 +109,7 @@ div.jumbotron {
     position: relative;
     height: 285px; 
     max-width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 div.jumbotext {
@@ -196,10 +196,15 @@ div.image-list {
     max-width: calc(100%);
 }
 
-/*Parralax section*/
+/*Learn More section*/
 #parallax-1 {
+    /* The image used */
     background-image: url("../img/learn1.jpg");
+  
+    /* Set a specific height */
     min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -207,8 +212,13 @@ div.image-list {
   }
 
 #parallax-2 {
+/* The image used */
 background-image: url("../img/learn2.jpg");
+
+/* Set a specific height */
 min-height: 500px; 
+
+/* Create the parallax scrolling effect */
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
@@ -217,7 +227,7 @@ background-size: cover;
 
 #parallax-text-1 {
     padding: 40px;
-    max-width: 35vw;
+    max-width: 35%;
     text-align: left;
     position: absolute;
     background-color: #fef802;
@@ -230,7 +240,7 @@ background-size: cover;
 
 #parallax-text-3 {
     padding: 40px;
-    max-width: 35vw;
+    max-width: 35%;
     text-align: right;
     position: absolute;
     margin-left: 65%;
