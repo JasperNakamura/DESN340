@@ -1,10 +1,8 @@
 #hero {
-    padding-top: 30px;
     height: 30vh;
-}
-
-#hero a {
-    margin-top: 2%;
+    display: grid;
+    place-items: center;
+    overflow: auto;
 }
 
 #blurb {
@@ -24,4 +22,3 @@
     height: 200px;
     width: 200px;
 }
-
