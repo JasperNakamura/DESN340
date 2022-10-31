@@ -1,0 +1,33 @@
+/*** GLOBAL STYLING ***/
+:root {
+    --contrast-button: #ef57d4;
+}
+
+/* box model fix */
+* {
+    box-sizing: border-box;
+}
+
+/*image rules*/
+img {
+    width: 100%;
+}
+/* HEADER STYLING */
+
+/** HOMEPAGE STYLING **/
+h1 {
+    background-color: red;
+}
+/* HERO SECTION */
+/* SECTION1 */
+/* SECTION2 */
+
+/** MAKERS WANTED PAGE STYLING **/
+
+/* INTERIOR HERO */
+/* SECTION1 */
+/* SECTION2 */
+
+/** PENCIL NO2 PAGE STYLING **/
+
+/** FOOTER STYLING **/
