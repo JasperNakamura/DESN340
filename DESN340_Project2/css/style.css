@@ -5,6 +5,7 @@
 /* box model fix */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -121,7 +122,11 @@ header #twitter-icon {
 
 
 /* HOME PAGE STYLING */
-
+#jumbotron {
+	background-image: url(../images/hero1.jpg);
+	background-size: cover;
+	height: 85vh;
+}
 
 /* INTERIOR PAGE STYLING */
 
@@ -131,7 +136,7 @@ header #twitter-icon {
 #jumbotron-interior {
 	background-image: url(../images/hero2.jpg);
 	background-size: cover;
-	height: 546px;
+	height: 60vh;
 }
 
 #jumbotron-interior h1 {
@@ -176,8 +181,8 @@ header #twitter-icon {
 }
 
 #interior-body-copy div {
-	margin-top: 87px;
-	margin-bottom: 15px;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
 
 #interior-body-copy span {
@@ -198,55 +203,29 @@ header #twitter-icon {
 	background-color: #66615a;  /*temporary brown so text shows up */
 	height: 90vh;
 }
+
+#jumbotron-product .row {
+	padding-top: 10vh;
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
 #jumbotron-product h1 {
-	margin-top: 150px;
-	margin-bottom: 25px;
-	color: #66615a; /* white */
-	font-size: 74px;
+	font-size: 53pt;
 	text-transform: uppercase;
+	color: #000; /* white */
 	font-weight: 300;
+	line-height: 110%;
 }
 #jumbotron-product h1 span {
 	font-weight: 700;
 }
-#jumbotron-product a {
-	color: #ffffff; /* white */
-	font-weight: normal;
-}
-#jumbotron-product a:hover {
-	color: #c94a00; /* orange */
-}
-#jumbotron-product a.button {
-	color: rgba(255,255,255,0.7); /* white */
-	background-color: #ec5e28; /* bright orange */
-	padding: 10px;
-}
-#jumbotron-product a.button:hover {
-	color: #ffffff; /* white */
-	background-color: #c94a00; /* orange */
-}
-
-a#buy-now {
-	padding: 10px 20px 10px 20px;
-	border-radius: 20px;
-	background-color: #eb5e28;
-	margin-right: 18px;
-}
-
-a#buy-now:hover {
-	background-color: white;
-}
-
-#watch-video {
-	margin-top: 150px;
-	margin-bottom: 50px;
-}
-
 
 /* Surface pressure */
-
 #surface-pressure .row {
-	margin-top: 85px;
+	margin-top: 10vh;
+	padding-bottom: 10vh;
 	border-bottom: 1px solid #f1eae0;
 	color: #67625e;
 }
@@ -262,7 +241,7 @@ a#buy-now:hover {
 
 #simply-works {
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 10vh;
 }
 
 #simply-works-header {
@@ -277,8 +256,8 @@ a#buy-now:hover {
 #simply-works h1 {
 	margin: 0;
 	padding: 0;
-	margin-top: 150px;
-	margin-bottom: 20px;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
 	font-size: 70px;
 	color: #66625b; /* dark clay */
 	text-transform: uppercase;
@@ -322,7 +301,7 @@ a#buy-now:hover {
 		padding-bottom: 50px;
 	}
 
-	#kiss {
+	#disposable {
 		padding-bottom: 20px;
 	}
 
@@ -334,13 +313,70 @@ a#buy-now:hover {
 	background-size: cover;
 	background-color: #66615a;
 	height: 70vh;
+	padding-top: 10vh;
+	color: #000; /* black */
+	font-size: 28px;
+}
+
+#buy-area h1 {
+	color: #fff; /* white */
+	font-size: 54pt;
+	text-transform: uppercase;
+	font-weight: 300;
+	line-height: 110%;
+}
+
+#buy-area h1 span {
+	font-weight: 700;
+}
+
+#buy-area .row {
+	display: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.CTA {
+	font-size: 16px;
+	color: #fff; /* white */
+	background-color: #ec5e28; /* orange */
+	border-radius: .3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 50px;
+	padding: 0.5rem;
+}
+
+.CTA:hover {
+	background-color: #a13b00;
+	color: #fff;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 575px) {
+	#buy-area {
+		background-image: none;
+		background-color: #fffcf5; /* ecru */
+		text-align: center;
+	}
+
+	#buy-area h1 {
+		color: black;
+		font-size: 24px;
+	}
+
+	.CTA {
+		margin: 0 auto;
+	}
 }
 
 /* FOOTER STYLING */
 footer {
 	background-color: #252321; /* dark grey almost black */
 	color: #a39e93; /* ecru */
-	padding-top: 35px;
+	padding-top: 10vh;
 	font-size: 90%;
 }
 footer ul {
@@ -349,7 +385,7 @@ footer ul {
 	padding: 0;
 }
 footer li {
-	margin-bottom: 8px;
+	margin-bottom: 1vh;
 }
 
 footer li a {
