@@ -27,6 +27,11 @@ html {
 
 img {
 	max-width: 100%;
+	pointer-events: none;  
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
 }
 
 body {
@@ -122,10 +127,66 @@ header #twitter-icon {
 
 
 /* HOME PAGE STYLING */
+
+/* jumbotron */
 #jumbotron {
 	background-image: url(../images/hero1.jpg);
 	background-size: cover;
-	height: 85vh;
+	height: 55vh;
+}
+
+#jumbotron h1 {
+	padding-top: 5vh;
+	font-size: 53pt;
+	text-transform: uppercase;
+	color: #fff; /* white */
+	font-weight: 500;
+	line-height: 110%;
+}
+
+/* keeping ideas in motion */
+#motion {
+	text-align: center;
+	margin-bottom: 10vh;
+}
+
+#motion h1 {
+	margin: 0;
+	padding: 0;
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+	font-size: 70px;
+	color: #66625b; /* dark clay */
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1;
+}
+
+#motion h2 {
+	color: #66625b; /* dark clay */
+	font-size: 28px;
+}
+
+#motion img {
+	margin-top: 5vh;
+	width: 200px;
+}
+
+/* products */
+#products {
+	margin-bottom: -25vh;
+	color: #66625b; /* dark clay */
+	text-align: center;
+}
+
+#products h2{
+	padding-bottom: 2vh;
+}
+
+#products img {
+	position:relative;
+	z-index: -1;
+	width: 500px;
 }
 
 /* INTERIOR PAGE STYLING */
@@ -214,7 +275,7 @@ header #twitter-icon {
 #jumbotron-product h1 {
 	font-size: 53pt;
 	text-transform: uppercase;
-	color: #000; /* white */
+	color: #000; /* black */
 	font-weight: 300;
 	line-height: 110%;
 }
