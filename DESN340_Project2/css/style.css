@@ -263,6 +263,8 @@ header #twitter-icon {
 	background-size: cover;
 	background-color: #66615a;  /*temporary brown so text shows up */
 	height: 90vh;
+	border-top: #000;
+	border-top-style: solid;
 }
 
 #jumbotron-product .row {
@@ -318,7 +320,7 @@ header #twitter-icon {
 	margin: 0;
 	padding: 0;
 	margin-top: 10vh;
-	margin-bottom: 10vh;
+	margin-bottom: 5vh;
 	font-size: 70px;
 	color: #66625b; /* dark clay */
 	text-transform: uppercase;
