@@ -78,16 +78,15 @@ a.buttons {
 		height: 70vh;
 		color: wheat;
 		font-size: 20px;
-		margin-top: 9px;
+		margin-top: 1em;
 		line-height: 1.2em;
 		padding: 2rem;
-		
 	}
 
 	#par1 h4 {
 		color: wheat;
 		font-size: 20px;
-		margin-top: 9px;
+		margin-top: 1em;
 		line-height: 1.2em;
 	}
 
@@ -108,7 +107,8 @@ a.buttons {
 
 @media screen and (min-width: 650px) {
 	section#par1 {
-		max-width: 600px;
+		max-width: 100vw;
+		text-align: center;
 		padding: 2rem;
 	}
 	section#flex-box {
@@ -123,7 +123,7 @@ a.buttons {
 	}
 }
 
-img#fuck {
+img#fudge {
 	filter: contrast(500%);
 	filter: grayscale(100%);
 }
