@@ -132,7 +132,7 @@ header #twitter-icon {
 #jumbotron {
 	background-image: url(../images/hero1.jpg);
 	background-size: cover;
-	height: 55vh;
+	height: 90vh;
 }
 
 #jumbotron h1 {
@@ -148,6 +148,7 @@ header #twitter-icon {
 #motion {
 	text-align: center;
 	margin-bottom: 10vh;
+	width: 50vw;
 }
 
 #motion h1 {
@@ -155,16 +156,16 @@ header #twitter-icon {
 	padding: 0;
 	margin-top: 10vh;
 	margin-bottom: 5vh;
-	font-size: 70px;
+	font-size: 42px;
 	color: #66625b; /* dark clay */
 	text-transform: uppercase;
-	font-weight: normal;
 	line-height: 1;
 }
 
 #motion h2 {
 	color: #66625b; /* dark clay */
 	font-size: 28px;
+	font-weight: normal;
 }
 
 #motion img {
@@ -174,7 +175,7 @@ header #twitter-icon {
 
 /* products */
 #products {
-	margin-bottom: -25vh;
+	margin-bottom: -10vh;
 	color: #66625b; /* dark clay */
 	text-align: center;
 }
@@ -198,6 +199,9 @@ header #twitter-icon {
 	background-image: url(../images/hero2.jpg);
 	background-size: cover;
 	height: 60vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
 }
 
 #jumbotron-interior h1 {
@@ -205,7 +209,6 @@ header #twitter-icon {
 	text-transform: uppercase;
 	color: #ffffff; /* white */
 	font-weight: 700;
-	margin-top: 191px;
 	line-height: 110%
 }
 
@@ -383,7 +386,7 @@ header #twitter-icon {
 
 #buy-area h1 {
 	color: #fff; /* white */
-	font-size: 54pt;
+	font-size: 46pt;
 	text-transform: uppercase;
 	font-weight: 300;
 	line-height: 110%;
@@ -395,8 +398,6 @@ header #twitter-icon {
 
 #buy-area .row {
 	display: row;
-	align-items: center;
-	justify-content: center;
 }
 
 .CTA {
@@ -407,6 +408,7 @@ header #twitter-icon {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 1em;
 	width: 250px;
 	height: 50px;
 	padding: 0.5rem;
