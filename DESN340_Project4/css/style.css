@@ -1,0 +1,29 @@
+#hero {
+    height: 30vh;
+    display: grid;
+    place-items: center;
+    overflow: auto;
+}
+
+#blurb {
+    margin-top: 5%;
+}
+
+#mui-btn {
+    margin-top: 2%;
+}
+
+#images {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#images #vs  {
+    display: grid;
+    place-items: center;
+}
+
+#images img{
+    height: 200px;
+    width: 200px;
+}
