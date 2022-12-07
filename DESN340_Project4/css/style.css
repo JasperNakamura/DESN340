@@ -1,29 +1,224 @@
-#hero {
-    height: 30vh;
-    display: grid;
-    place-items: center;
-    overflow: auto;
+/*** GLOBAL STYLING ***/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spectral&display=swap');
+
+:root {
+    --primary-color: #E2C2C5;
+    --seconadry-color: #E98D86;
+    --font-color-primary: #fff;
 }
 
-#blurb {
-    margin-top: 5%;
+/* remove bootstrap extra padding */
+.container-fluid {
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-#mui-btn {
-    margin-top: 2%;
+.card {
+    border-color: transparent;
+    background-color: transparent;
 }
 
-#images {
-    margin-top: 5%;
-    margin-bottom: 5%;
+/* regular global styling */
+body {
+    color: var(--font-color-primary);
+    background-image: url(../img/background.png);
 }
 
-#images #vs  {
-    display: grid;
-    place-items: center;
+h1, h2{
+    font-family: 'Spectral';
+    color: var(--font-color-primary);
+    text-shadow: 2px 2px black;
 }
 
-#images img{
-    height: 200px;
-    width: 200px;
+img {
+    width: 100%;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    border-color: none;
+}
+
+.btn {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open > .dropdown-toggle.btn {
+    background: var(--seconadry-color);
+    border-color: var(--seconadry-color);
+    color: #ffffff;
+}
+
+.btn:active, .btn.active {
+    background: var(--primary-color);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 400px) {
+    .card-title h1 {
+      font-size: 10px;
+      color: red;
+    }
+}
+
+li>a:hover{
+    text-decoration: underline;
+}
+
+/* HEADER STYLING */
+#nav-color {
+    background-color: var(--seconadry-color);
+}
+
+/** HOMEPAGE STYLING **/
+
+/* CAROUSEL SECTION */
+#carousel {
+    margin-bottom: 5em;
+}
+
+.carousel-caption {
+    top: 10%;
+}
+
+.carousel-caption h2 {
+    margin-top: 15%;
+    font-family: "Spectral";
+}
+
+/* SECTION1 */
+#company-info {
+    margin-bottom: 5em;
+}
+
+#time {
+    width: 70%;
+}
+
+#map {
+    width: 100%;
+    height: 90%;
+    margin-top: 10%;
+    border-radius: 2em;
+    filter:blur(1rem);
+}
+
+#map:hover,
+#map:focus,
+#map:active {
+    transition-duration: 3s;
+    filter: none;
+}
+
+/** NEWSLETTER **/
+#newsletter {
+    margin-top: 5em;
+    background-color: var(--seconadry-color);
+    border-radius: 2em 2em 0 0;
+    height: 25vh;
+}
+
+#newsletter h1 {
+    text-shadow: none;
+}
+
+#newsletter .form-group {
+    margin: 0 auto;
+    width: 30vw;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+/* ABOUT PAGE */
+/* Hero */
+#abouthero {
+    background-image: url(../img/AboutHero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron {
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+  
+/* Accomplish */
+#accomplish .card {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    flex-direction: row;
+    align-items: center;
+    background: #E2C2C5;
+}
+
+#accomplish .card-title {
+    text-shadow: none;
+}
+
+#accomplish p {
+    color: #fff;
+}    
+
+#accomplish .card img {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: calc(0.25rem - 1px);
+    margin-right: 2em;
+}
+@media only screen and (max-width: 768px) {
+    #accomplish a {
+        display: none;
+    }
+    
+    #accomplish .card-body {
+        padding: 0.5em 1.2em;
+    }
+    
+    #accomplish .card-body .card-text {
+        margin: 0;
+    }
+    
+    #accomplish .card img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #accomplish .card img {
+        width: 40%;
+    }
+}
+
+#testimonial {
+    margin-bottom: 10em;
+}
+
+/* MENU PAGE */
+/* Menu Picture */
+#menu img{
+    width: 100%;
+}
+
+#crayon {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#crayon h1, p {
+    text-shadow: none;
+    color: #000; /* black */
+}
+
+/** FOOTER STYLING **/
+#footer {
+    background-color: var(--primary-color);
+    bottom: 0;
+}
+
+#footer img {
+    width: 48px;
 }
