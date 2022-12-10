@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spectral&display=swap');
 
 :root {
-    --primary-color: #E2C2C5;
-    --seconadry-color: #E98D86;
-    --font-color-primary: #fff;
+    --primary-color: #E2C2C5; /* Primary Pink */
+    --seconadry-color: #E98D86; /* Darker Pink */
+    --font-color-primary: #fff; /* White */
+    --testimonial-color: #E2BF8D; /* Coffee color for testimonial */
 }
 
 /* remove bootstrap extra padding */
@@ -35,6 +36,10 @@ img {
     width: 100%;
 }
 
+.container-fluid {
+    overflow: hidden;
+}
+
 .btn:focus, .btn:active:focus, .btn.active:focus {
     border-color: none;
 }
@@ -57,9 +62,20 @@ img {
 }
 
 @media screen and (max-width: 400px) {
-    .card-title h1 {
-      font-size: 10px;
-      color: red;
+    .container-fluid {
+      padding: 0;
+    }
+  
+    .container {
+      padding: 0 15px;
+    }
+  
+    .form-control {
+      width: 100%;
+    }
+  
+    .btn {
+      width: 100%;
     }
 }
 
@@ -69,7 +85,7 @@ li>a:hover{
 
 /* HEADER STYLING */
 #nav-color {
-    background-color: var(--seconadry-color);
+    background-color: var(--primary-color);
 }
 
 /** HOMEPAGE STYLING **/
@@ -86,6 +102,17 @@ li>a:hover{
 .carousel-caption h2 {
     margin-top: 15%;
     font-family: "Spectral";
+}
+
+.carousel p {
+    color: var(--font-color-primary);
+    text-shadow: 2px 2px #000;
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 16px;
+    }
 }
 
 /* SECTION1 */
@@ -117,7 +144,7 @@ li>a:hover{
     margin-top: 5em;
     background-color: var(--seconadry-color);
     border-radius: 2em 2em 0 0;
-    height: 25vh;
+    height: 40vh;
 }
 
 #newsletter h1 {
@@ -129,6 +156,16 @@ li>a:hover{
     width: 30vw;
     margin-bottom: 2em;
     margin-top: 2em;
+}
+
+@media screen and (max-width: 400px) {
+    #newsletter {
+        text-align: center;
+        height: 50vh;
+    }
+    #newsletter .form-group {
+        width: 100%;
+    }
 }
 
 /* ABOUT PAGE */
@@ -155,6 +192,28 @@ li>a:hover{
     background: #E2C2C5;
 }
 
+.card-text {
+    width: 75%;
+}
+
+@media screen and (max-width: 400px) {
+    #abouthero h1 {
+        text-align: center;
+    }
+
+    #accomplish .card {
+        flex-direction: column;
+    }
+    .card-text, .card-title {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#accomplish .card-body {
+    padding-left: 2em;
+}
+
 #accomplish .card-title {
     text-shadow: none;
 }
@@ -165,36 +224,50 @@ li>a:hover{
 
 #accomplish .card img {
     width: 100%;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: calc(0.25rem - 1px);
-    margin-right: 2em;
-}
-@media only screen and (max-width: 768px) {
-    #accomplish a {
-        display: none;
-    }
-    
-    #accomplish .card-body {
-        padding: 0.5em 1.2em;
-    }
-    
-    #accomplish .card-body .card-text {
-        margin: 0;
-    }
-    
-    #accomplish .card img {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    #accomplish .card img {
-        width: 40%;
-    }
 }
 
 #testimonial {
-    margin-bottom: 10em;
+    background-color: var(--testimonial-color);
+    padding: 3em;
+    font-size: 24px;
+    margin-bottom: 5em;
+}
+
+#testimonial p {
+    position: relative;
+    z-index: 1;
+    font-weight: 300;
+}
+
+#testimonial .mx-auto {
+    width: 50%;
+}
+
+.frontquote img {
+    width: 100px;
+    position: relative;
+    top: 50px;
+    left: 250px;
+}
+
+.backquote img {
+    width: 100px;
+    position: relative;
+    float: right;
+    bottom: 70px;
+    right: 250px;
+}
+
+@media screen and (max-width: 400px) {
+    #testimonial .mx-auto {
+        width: 100%;
+    }
+    .frontquote img {
+        left: 0px;
+    }
+    .backquote img {
+        right: 0px;
+    }
 }
 
 /* MENU PAGE */
@@ -215,6 +288,7 @@ li>a:hover{
 
 /** FOOTER STYLING **/
 #footer {
+    height: 20vh;
     background-color: var(--primary-color);
     bottom: 0;
 }
