@@ -130,6 +130,7 @@ li>a:hover{
     width: 300px;
     transform: rotate(30deg);
     position: fixed;
+    top: 50vh;
     left: -100px;
     z-index: 1;
     transition: opacity 5s ease-in-out;
@@ -180,7 +181,7 @@ li>a:hover{
 /* ABOUT PAGE */
 /* Hero */
 #abouthero {
-    background-image: url(../img/AboutHero.jpg);
+    background-image: url(../img/abouthero.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,6 +204,7 @@ li>a:hover{
 
 .card-text {
     width: 75%;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 400px) {

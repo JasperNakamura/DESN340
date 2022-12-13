@@ -18,16 +18,19 @@
             <div class="container-fluid" id="nav-color">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="container">
+                        <!-- Navigation Logo -->
                         <nav class="navbar navbar-dark">
                             <a class="navbar-brand btn btn-outline-light btn-floating m-1" href="index.html" role="button">
                                 <img src="img/logo.png" width="30" height="30" alt="">
                             </a>
                         </nav>
-            
+                        
+                        <!-- Navigation Bar Hamburger Menu when screen is small -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
+                        <!-- Navigation Bar Pages -->
                         <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
@@ -37,7 +40,7 @@
                                     <a class="nav-link text-white" href="menu.html">Menu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="contact.html">Contact Us</a>
+                                    <a class="nav-link text-white" href="#">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -47,12 +50,13 @@
         </header>
 
         <!-- Carousel Section -->
-        <div id="carousel" class="carousel slide carousel-fade" data-bs-interval="5000" data-bs-ride="carousel">
+        <section id="carousel" class="carousel slide carousel-fade" data-bs-interval="5000" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></button>
             </div>
+            <!-- Carousel Images -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/carousel1.png" class="d-block w-100" alt="fall"/>
@@ -81,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <!-- carousel buttons -->
+            <!-- Carousel Buttons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -90,7 +94,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+        </section>
 
         <!-- Ghost Easter Egg -->
         <div class="container" id="easteregg">
@@ -99,12 +103,12 @@
         
         <img id="ghost" src="img/ghost.gif" style="display: none;">
 
-        <!-- Open Hours and Google Map Location -->
-        <div class="container-fluid" id="company-info">
+        <!-- Open Hours and Google Map Location Section-->
+        <section class="container-fluid" id="company-info">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <img src="img/Hours.png" class="img mx-auto d-block p-5" alt="operationtime">
+                        <img src="img/hours.png" class="img mx-auto d-block p-5" alt="operationtime">
                     </div>
                     <div class="col-md-6 col-sm-12 p-5">
                         <iframe 
@@ -118,11 +122,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
           
 
-        <!-- What is Little Ghost -->
-        <div class="container-fluid">
+        <!-- What is Little Ghost Section-->
+        <section class="container-fluid">
             <div class="container">
                 <div class="card">
                     <img src="img/container_ghost.jpg" alt="info-blurb">
@@ -130,17 +134,17 @@
                         <h1 class="card-title">
                             What is Little Ghost?
                         </h1>
-                        <p class="card-text text-dark w-75 d-none d-md-block">
+                        <p class="card-text text-dark w-50 d-none d-md-block pt-3 pb-3">
                             We are a small pop-up cafe business. About once per season we set up a little cafe in an interesting location for a week. We focus on creating pleasant atmospheres in unique places. To help foster creative conversation, all of our tables are covered in paper and we make custom scented crayons for people to draw with as they talk and drink their coffee.
                         </p>
-                        <a href="#" class="btn btn-lg" role="button">Learn More</a>
+                        <a href="about.html" class="btn btn-lg" role="button">Learn More</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Newsletter -->
-        <div class="container-fluid">
+        <!-- Newsletter Section -->
+        <section class="container-fluid">
             <div class="container p-5" id="newsletter">
                 <h1 class="card-title display-6 font-weight-bolder">
                     Signup for our Newsletter
@@ -157,25 +161,27 @@
                     <button type="button" class="btn btn-lg">Submit</button>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Footer Area -->
         <footer id="footer">
             <div class="container p-4">
                 <!-- Links -->
                 <div class="row">
+                    <!-- Footer Navigation Logo -->
                     <div class="col-lg-4 col-md-8 col-sm-12 d-none d-sm-block">
                         <a class="btn btn-outline-light btn-floating m-1" href="index.html" role="button">
                             <img src="img/logo.png" width="100">
                         </a>
                         
                     </div>
+                    <!-- Footer Navigation Pages -->
                     <div class="col-lg-4 col-md-8 col-sm-12">
                         <ul class="nav justify-content-center">
                             <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
                             <li class="nav-item"><a href="about.html" class="nav-link px-2 text-white">About Us</a></li>
                             <li class="nav-item"><a href="menu.html" class="nav-link px-2 text-white">Menu</a></li>
-                            <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-white">Contact Us</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
                         </ul>
                     </div>
 
@@ -214,7 +220,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!-- Include the Bootstrap JavaScript library -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <!-- Ghost Easter Egg -->
+        <!-- Ghost Easter Egg Javascript Functions -->
         <script>
             function showImage() {
                 var image = document.getElementById("ghost");
